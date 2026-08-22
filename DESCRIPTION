@@ -1,0 +1,13 @@
+Package: rpcodereviewexemplar
+Title: Exemplar Code Review of the zzobj2fig Package
+Version: 0.0.0.9000
+Authors@R:
+    person(given = "Ronald G.", family = "Thomas", email = "rgthomas@ucsd.edu", role = c("aut", "cre"))
+Description: Blog post workspace walking through an applied code review of
+    an AI-assisted R package using zzvim-R as the review environment.
+License: GPL-3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.0
+Suggests:
+    tinytest (>= 1.4.0)
