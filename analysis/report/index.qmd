@@ -238,7 +238,7 @@ cat("Functions to review:", length(functions), "\n")
 ```
 
 For `zzobj2fig`, the review order followed the dependency graph:
-`zzz.R` (package initialisation) first, then `obj2fig.R` (core
+`zzz.R` (package initialization) first, then `obj2fig.R` (core
 internal implementation), `s3-methods.R`, `themes.R`,
 `advanced-features.R`, `broom-methods.R`, `formatting.R`, `inline.R`,
 `latex-include.R`, `batch.R`, `caching.R`, `output-formats.R`, and
@@ -310,7 +310,7 @@ That last line matters: `o2f.lm` assumes `summary.lm()`'s coefficient
 matrix has exactly those column names, and that assumption is only
 safe because it was checked, not because it seemed likely.
 
-## AI-generated code patterns, operationalised
+## AI-generated code patterns, operationalized
 
 The companion post's pattern checklist becomes concrete searches:
 
@@ -468,7 +468,7 @@ at all.
 
 Findings sort into the same four tiers as the companion post's
 framework: critical (security, crashes, incorrect calculations), major
-(significant behavioural deviation, missing validation, confusing
+(significant behavioral deviation, missing validation, confusing
 errors), minor (style, documentation gaps, small inefficiencies), and
 enhancement (feature suggestions, performance, API polish).
 
@@ -498,7 +498,7 @@ test_that("o2f.lm validates digits parameter", {
 devtools::test()
 ```
 
-The pattern generalises: reproduce interactively, fix the source, add
+The pattern generalizes: reproduce interactively, fix the source, add
 a test that would have caught the original defect, then confirm the
 whole suite still passes, not just the new test.
 
@@ -594,7 +594,7 @@ o2f(model, "my_regression", digits = 2,
 - **Trusting `trace()` output without `untrace()`-ing afterward.** A
   forgotten trace silently slows every subsequent call and produces
   console noise that looks like a new bug.
-- **Treating "the test passes" as "the behaviour is verified."** The
+- **Treating "the test passes" as "the behavior is verified."** The
   `o2f` file-existence test above passes even if the generated LaTeX
   is malformed; content verification is a separate, unaddressed gap.
 - **Skipping the security sweep on packages that "obviously" have no
@@ -607,7 +607,7 @@ o2f(model, "my_regression", digits = 2,
   whole function).** `debugonce()` on one input tells you about that
   input; the systematic function-review pass is still required.
 
-# Lessons Learnt
+# Lessons Learned
 
 **Conceptual:**
 
