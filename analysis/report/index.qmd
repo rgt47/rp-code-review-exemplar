@@ -542,15 +542,15 @@ absent).
 # Establishing Ownership
 
 Before claiming ownership of `zzobj2fig`, the review closed with a set
-of questions answerable without referring back to the source:
-architecture questions (what is the main entry point, how does S3
+of questions answerable without referring back to the source. The
+architecture questions: what is the main entry point, how does S3
 dispatch work, where is global state stored, what system dependencies
-are required), implementation questions (how are special LaTeX
+are required. The implementation questions: how are special LaTeX
 characters handled, what happens when compilation fails, how does the
-theme system resolve names to objects, how are footnotes
-implemented), and debugging questions (where would you look for wrong
-table formatting, how would you diagnose a LaTeX compilation error,
-what would cause `o2f` to return silently without creating files).
+theme system resolve names to objects, how are footnotes implemented.
+The debugging questions: where would you look for wrong table
+formatting, how would you diagnose a LaTeX compilation error, what
+would cause `o2f` to return silently without creating files.
 
 Demonstrating debugging proficiency without AI assistance is the
 concrete test:
@@ -682,10 +682,10 @@ reading test bodies, not the coverage percentage; and understanding
 the security posture of two `system()` calls required checking the
 quoting discipline at each call site individually, not trusting that
 "the package looks careful" as a whole. None of that substitutes for
-the framework; it is what the framework looks like when it is
+the framework. It is what the framework looks like when it is
 actually run against a package with 52 exported functions and a
-LaTeX compilation step that could, if the quoting were wrong, execute
-arbitrary shell commands.
+LaTeX compilation step that could execute arbitrary shell commands if
+the quoting were wrong.
 
 **Main takeaways:**
 
