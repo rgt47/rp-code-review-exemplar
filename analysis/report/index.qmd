@@ -6,7 +6,7 @@ categories: [r, r-packages, code-review, ai-assisted-development, zzvim-r]
 description: "An applied, step-by-step walkthrough of reviewing an AI-assisted R package with zzvim-R as the review environment, from structural audit through CRAN submission."
 image: "media/images/hero.jpg"
 document-type: "blog"
-draft: true
+draft: false
 execute:
   echo: true
   warning: false
