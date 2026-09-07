@@ -774,7 +774,7 @@ PRE-PUBLISH QA CHECKLIST — verify each item BEFORE setting draft: false
     [x] Zero emoji anywhere
     [x] Zero em dashes
     [x] Single quotes preferred over double quotes in prose
-    [x] Epistemic disclosure present: coverage/verdict figures flagged as
+    [x] Confidence disclosure present: coverage/verdict figures flagged as
         carried over from source, not independently re-verified
 
 [ ] Cross-references
